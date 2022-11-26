@@ -1,0 +1,141 @@
+.cart-area{
+	.cart-wrapper{
+		.table-responsive{
+			.product-table{
+				margin:60px 0;
+				@media (max-width: 575px){
+					margin:15px 0;
+				}
+				thead{
+					border-bottom:1px solid $border-color;
+ 				}
+				tbody{
+					margin:15px 0 0;
+					.table-remove{
+						button{
+							padding: 0;
+							border: none;
+							background: no-repeat;
+							line-height: normal;
+							cursor: pointer;
+							outline: none;
+							i{
+								vertical-align:middle;
+								&:hover{
+									color:$red;
+								}
+							}
+						}
+					}
+					.table-image{
+						a{
+							img{
+								width: 70px;
+								@media (max-width: 575px){
+									width:auto;
+								}
+							}
+						}
+					}
+					.table-p-name{
+						a{
+							font:400 18px/20px $secondary-font;
+							color:$gray;
+							@media (max-width: 575px){
+								font-size:14px;
+							}
+						}
+					}
+					.table-p-price{
+						p{
+							margin:0;
+						}
+					}
+					.table-p-qty{
+						input{
+								width: 62px;
+								height: 43px;
+								text-align: center;
+								border: 1px solid $border-color;
+								color: $gray;
+								margin: 0 15px 0 0;
+								padding:10px;
+						}
+					}
+				}
+			}
+		}
+		.table-bottom-wrapper{
+			padding:60px 20px 0;
+			border-top:none;
+			@media (max-width: 767px){
+				padding:60px 0 0;
+			}
+			@media (max-width: 575px){
+				padding:30px 0 0;
+			}
+			.table-coupon{
+				margin:0 0 20px;
+				input{
+					padding:10px;
+					border:1px solid $border-color;
+					border-radius:25px;
+					margin:0 10px 0 0;
+					@media (max-width: 543px){
+						    width: 46%;
+					}
+				}
+			}
+			.table-update{
+				@media (max-width: 580px){
+					text-align:right;
+					clear: left;
+					margin: 0 0 30px;
+				}
+			}
+		}
+	}
+	.table-total-wrapper{
+		@media (max-width: 767px){
+			width: 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.table-total-content{
+			padding:40px;
+			float:left;
+			width:100%;
+			background:$cart-bg;
+			@media (max-width: 1199px){
+				padding: 20px;
+			}
+			h2{
+				font: 700 22px/20px $secondary-font;
+				margin: 0 0 30px;
+				border-bottom:1px solid $border-color;
+			}
+			.table-total-amount{
+				.single-total-content {
+					margin:0 0 30px;
+					&.tt-total{
+						padding:20px 0 0;
+						border-top:1px solid $border-color;
+
+					}
+					a{
+						color:$gray;
+					}
+				}
+				.btn-dark{
+					line-height:24px;
+				}
+			}
+		}
+	}
+}
+.table{
+	td,th{
+		vertical-align:middle;
+		border:none!important;
+	}
+}
